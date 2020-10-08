@@ -1,0 +1,52 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Mac Stuff
+.DS_Store
+
+# Keep our credential files out of Git
+arduino_secret.h
+
+# Keep local config files out of Git
+**/.vscode/.*
+*.code-workspace
+
+# Keep intermediate build files out of Git
+**/build/*
+
+# Keep KiCAD libraries
+!**/KiCAD/*.lib
+
+**/KiCAD/*.sch-bak
+
+sketch.json
