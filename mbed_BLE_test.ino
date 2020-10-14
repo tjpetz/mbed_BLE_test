@@ -1,3 +1,7 @@
+/**
+ * Based on the example: https://github.com/ARMmbed/mbed-os-example-ble/tree/master/BLE_BatteryLevel
+ */
+
 #include <mbed.h>
 #include <events/mbed_events.h>
 #include "ble/BLE.h"
@@ -143,6 +147,8 @@ private:
 void schedule_ble_events(BLE::OnEventsToProcessCallbackContext *context) {
   event_queue.call(mbed::Callback<void()>(&context->ble, &BLE::processEvents));
 }
+
+// As we're using the Arduino framework we use setup and loop rather than main.
 
 void setup() {
   Serial.begin(115200);
